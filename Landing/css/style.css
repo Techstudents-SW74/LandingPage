@@ -211,6 +211,8 @@ section {
 
 
 
+/* Estilos para la galería */
+
 /* Sección Gallery */
 #gallery {
     background-color: var(--color-400);
@@ -223,53 +225,61 @@ section {
     font-size: 36px;
 }
 
-.gallery img {
-    width: 200px;
-    margin: 10px;
-    border-radius: 8px;
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre imágenes */
+    padding: 20px;
 }
 
-/* Contact */
+.gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
 
+.gallery img:hover {
+    transform: scale(1.1); /* Aumento de la imagen */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Sección Contacto */
 .contact-section {
-    background-color: var(--color-800); /* Utilizando el color de la paleta */
-    padding: 50px 20px;
-    text-align: center;
-    color: white;
+    background-color: var(--color-50); /* Fondo claro */
+    border: 2px solid var(--color-200); /* Borde */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 40px 20px; /* Espaciado interior */
+    max-width: 500px; /* Ancho máximo del cuadro */
+    margin: 40px auto; /* Centrar la sección */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    text-align: center; /* Centrar el texto */
 }
 
 .contact-section h2 {
-    font-size: 2.5rem;
+    font-size: 28px;
+    color: var(--color-600);
     margin-bottom: 20px;
-    color: var(--color-100); /* Color claro de la paleta */
 }
 
 .contact-section p {
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 18px;
+    color: var(--color-400);
+    margin-bottom: 15px;
 }
 
 .contact-section a {
-    color: var(--color-50); /* Color claro para los links */
+    color: var(--color-600); /* Color de enlace */
     text-decoration: none;
-    font-weight: bold;
 }
 
 .contact-section a:hover {
-    color: var(--color-200); /* Cambia el color al pasar el mouse */
-}
-
-.contact-section a:focus {
-    outline: 2px solid var(--color-100); /* Añade accesibilidad */
-}
-
-.contact-section p a {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.contact-section p a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subrayar al pasar el ratón */
 }
 
 
