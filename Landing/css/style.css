@@ -1,12 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
-*{
+
+:root {
+    --color-50: #F6F5FA;
+    --color-100: #ECEBF3;
+    --color-200: #D3D2E5;
+    --color-300: #ABABCE;
+    --color-400: #7E7EB2;
+    --color-500: #5E5E99;
+    --color-600: #4C447F;
+    --color-700: #3F3D67;
+    --color-800: #373557;
+    --color-900: #31304A;
+    --color-950: #13121C;
+}
+
+* {
     font-family: 'Dosis', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-decoration: none;
     transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
     text-transform: capitalize;
+}
 
+/* Estilo global */
+body {
+    background-color: var(--color-50);
+    color: var(--color-900);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Espaciado para compensar el header fijo */
+section {
+    padding-top: 80px;
+}
+
+
+
+/* Header */
+.header {
+    background-color: var(--color-900);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo i {
+    color: var(--color-100);
+    font-size: 24px;
+}
+
+.navbar a {
+    color: var(--color-100);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: var(--color-300);
+}
+
+/* Sección Home */
+#home {
+    background-color: var(--color-100);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home h1 {
+    color: var(--color-600);
+    font-size: 48px;
+}
+
+#home p {
+    color: var(--color-500);
+    font-size: 20px;
+}
+
+#home img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Sección About */
+#about {
+    background-color: var(--color-200);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    color: var(--color-600);
+    font-size: 36px;
+}
+
+#about p {
+    color: var(--color-400);
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Sección Food */
+#food {
+    background-color: var(--color-300);
+    padding: 60px 20px;
+}
+
+#food h2 {
+    color: var(--color-600);
+    text-align: center;
+    font-size: 36px;
+}
+
+#food ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#food li {
+    background-color: var(--color-100);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: var(--color-600);
+}
+
+/* Sección Gallery */
+#gallery {
+    background-color: var(--color-400);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    color: var(--color-100);
+    font-size: 36px;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-900);
+    color: var(--color-100);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
