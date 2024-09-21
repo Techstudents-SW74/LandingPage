@@ -68,6 +68,25 @@ section {
 }
 
 
+/* Estilo para el botón */
+.btn {
+    display: inline-block;
+    background-color: var(--color-600); /* Color del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.btn:hover {
+    background-color: var(--color-700); /* Color del botón al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandar ligeramente el botón */
+}
 
 
 /* Sección Home */
@@ -164,6 +183,61 @@ section {
     font-size: 16px;
     line-height: 1.6;
 }
+
+
+
+
+/* Estilos para la sección de equipo */
+#team {
+    background-color: var(--color-100);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#team h2 {
+    color: var(--color-600);
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Contenedor del equipo */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los miembros del equipo */
+    flex-wrap: wrap; /* Para que las columnas se ajusten en pantallas pequeñas */
+}
+
+/* Estilos para cada miembro del equipo */
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hacer las imágenes circulares */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.team-member h4 {
+    color: var(--color-500);
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.team-member p {
+    color: var(--color-400);
+    font-size: 16px;
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Efecto de aumento cuando se pasa el ratón por encima */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 
 
