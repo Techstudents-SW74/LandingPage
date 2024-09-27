@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.gallery img');
     const closeBtn = document.querySelector('.close');
 
+    // Muestra una imagen ampliada en un modal al hacer clic en las imágenes de la galería
     images.forEach(img => {
         img.addEventListener('click', function() {
             modal.style.display = "block";
